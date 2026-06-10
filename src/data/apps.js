@@ -39,6 +39,7 @@ import spacex from "../assets/apps/spacex.png";
 import ibm from "../assets/apps/ibm.png";
 import tesla from "../assets/apps/tesla.png";
 import nvida from "../assets/apps/nvida.png";
+import opay from "../assets/apps/opay.png";
 
 export const apps = [
   {
@@ -4043,7 +4044,7 @@ export const apps = [
       "GPU and AI computing company with $130B+ annual revenue — the infrastructure layer for the entire AI industry.",
     category: "Semiconductors & AI Infrastructure",
     color: "#76B900",
-    logo: nvidia,
+    logo: nvida,
     users: "Every AI company on earth",
     founded: 1993,
     stack: {
@@ -4156,6 +4157,78 @@ export const apps = [
       "NCCL",
       "cuDNN",
     ],
+  },
+  {
+    id: "opay",
+    name: "OPay",
+    tagline: "Africa's super app",
+    description:
+      "Opera-backed Nigerian super app handling payments, food delivery, ride-hailing, and more — processing billions of naira in transactions daily across Africa.",
+    category: "Fintech",
+    color: "#00A851",
+    logo: opay,
+    users: "35M+",
+    founded: 2018,
+    stack: {
+      frontend: {
+        label: "Frontend",
+        items: [
+          { name: "React Native", note: "Cross-platform iOS & Android app" },
+          { name: "React.js", note: "Merchant dashboard & web portal" },
+          { name: "Redux", note: "Client-side state management" },
+        ],
+      },
+      backend: {
+        label: "Backend",
+        items: [
+          { name: "Java (Spring Boot)", note: "Core payment microservices" },
+          { name: "Node.js", note: "API gateway & notification services" },
+          { name: "Go", note: "High-throughput transaction processing" },
+          { name: "Python", note: "Fraud detection & analytics pipelines" },
+        ],
+      },
+      database: {
+        label: "Database",
+        items: [
+          { name: "MySQL", note: "Primary transactional data store" },
+          { name: "Redis", note: "Session management & real-time caching" },
+          { name: "MongoDB", note: "User profiles & activity logs" },
+          { name: "Elasticsearch", note: "Transaction search & audit trails" },
+        ],
+      },
+      cloud: {
+        label: "Cloud & Infra",
+        items: [
+          { name: "AWS", note: "Primary cloud — Lagos & global regions" },
+          { name: "Alibaba Cloud", note: "Redundancy & Asia-Pacific ops" },
+          {
+            name: "Kubernetes",
+            note: "Container orchestration across services",
+          },
+          { name: "Kafka", note: "Event streaming for payment events" },
+        ],
+      },
+      ai: {
+        label: "AI & Data",
+        items: [
+          {
+            name: "Custom ML models",
+            note: "Real-time fraud scoring on every txn",
+          },
+          {
+            name: "Apache Spark",
+            note: "Batch processing of transaction data",
+          },
+          { name: "TensorFlow", note: "Credit risk & behavioral analysis" },
+        ],
+      },
+      scaling: {
+        label: "Scaling",
+        description:
+          "OPay processes millions of transactions per day through a microservices mesh. They operate their own agent banking network of 500K+ agents across Nigeria, requiring offline-tolerant sync architecture. Kafka handles all payment event streams, and multiple cloud providers give them Nigerian infrastructure redundancy during outages.",
+      },
+    },
+    tags: ["React Native", "Java", "Kafka", "AWS", "Microservices", "Redis"],
   },
 ];
 
